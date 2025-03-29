@@ -1,0 +1,347 @@
+/* General Reset / Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts & Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Navigation */
+.header {
+  background-color: #000;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: box-shadow 0.3s ease;
+}
+.header-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img.logo-img {
+  max-height: 50px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #f06529;
+}
+
+/* Hero Section */
+.hero {
+  background: #111;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.hero-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.btn {
+  background-color: #f06529;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #d9541f;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #f06529;
+  margin-bottom: 2rem;
+}
+
+/* Workflow Section */
+.workflow {
+  padding: 4rem 0;
+}
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+.step {
+  flex: 1 1 200px;
+  text-align: center;
+  max-width: 250px;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.step:hover {
+  transform: translateY(-5px);
+}
+.step h3 {
+  color: #f06529;
+  margin-bottom: 1rem;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #023062, #3f039e);
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-member {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 220px;
+}
+
+.team-member:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 4px solid #f06529;
+}
+
+.team-member h4 {
+  color: #f06529;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+
+/* Products Section */
+.products {
+  padding: 4rem 0;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.product {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+.product img,
+.product video {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.product h4 {
+  margin-bottom: 0.5rem;
+  color: #f06529;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 0;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.testimonial {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 6px;
+}
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  padding: 3rem 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-content,
+.footer-info,
+.footer-subscribe {
+  flex: 1 1 200px;
+}
+.footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-subscribe input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.footer-subscribe button {
+  padding: 0.5rem;
+  background-color: #f06529;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.footer-subscribe button:hover {
+  background-color: #d9541f;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #f06529;
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+#backToTop:hover {
+  background-color: #d9541f;
+}
+
+/* Fade-in classes for Intersection Observer */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    gap: 1rem;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Social Media Buttons */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 32px; /* Adjust size */
+  height: 32px; /* Adjust size */
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Effect */
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
