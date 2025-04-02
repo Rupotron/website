@@ -1,325 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inrush Digibros - Digital Creative Agency</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <!-- HEADER / NAVIGATION -->
-  <header class="header" id="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <!-- Use your logo image -->
-        <a href="#">
-          <img src="images/logo.png" alt="Inrush Digibros Logo" class="logo-img" />
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inrush Digibros - Digital Creative Agency</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <div class="logo">
+          <!-- Use your logo image -->
+          <a href="#">
+            <img src="images/logo.png" alt="Inrush Digibros Logo" class="logo-img" />
+          </a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#workflow" class="nav-link">Workflow</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#hero" class="nav-link">Home</a></li>
-          <!-- Services section removed -->
-          <li><a href="#workflow" class="nav-link">Workflow</a></li>
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#products" class="nav-link">Products</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="hero">
-    <div class="container hero-content fade-in">
-      <h2 id="typewriter"></h2>
-      <p>We’re the three bros with a passion for creativity, strategy, and digital innovation.</p>
-      <a href="#workflow" class="btn">Explore Workflow</a>
-    </div>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-content fade-in">
+        <h2 id="typewriter"></h2>
+        <p>We’re the three bros with a passion for creativity, strategy, and digital innovation.</p>
+        <a href="#workflow" class="btn">Explore Workflow</a>
+      </div>
+    </section>
 
-  <!-- WORKFLOW SECTION -->
-  <section class="workflow fade-in" id="workflow">
-    <div class="container">
-      <h2 class="section-title">OUR WORKFLOW</h2>
-      <div class="workflow-steps">
-        <div class="step">
-          <h3>01 CONCEPT</h3>
-          <p>We begin by brainstorming and understanding your vision.</p>
-        </div>
-        <div class="step">
-          <h3>02 BUDGET</h3>
-          <p>We define the scope and resources needed for the project.</p>
-        </div>
-        <div class="step">
-          <h3>03 DEVELOPMENT</h3>
-          <p>We create, iterate, and refine until we meet your goals.</p>
-        </div>
-        <div class="step">
-          <h3>04 RESULTS</h3>
-          <p>We deliver measurable outcomes that drive success.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ABOUT US SECTION -->
-<section class="about-us fade-in" id="about">
-  <div class="container">
-    <h2 class="section-title">MEET THE DIGIBROS</h2>
-    <div class="about-content">
-      <p>
-        We are a team of passionate digital experts dedicated to helping artists, entrepreneurs, and businesses 
-        thrive in the online world. Our expertise in marketing, design, and technology fuels innovative solutions 
-        that drive success. Let’s build something incredible together!
-      </p>
-    </div>
-    <div class="team-grid fade-in">
-      <div class="team-member">
-        <img src="images/indrayudh.jpg" alt="Indrayudh">
-        <h4>Indrayudh</h4>
-        <p>Content Head & Creative Director</p>
-      </div>
-      <div class="team-member">
-        <img src="images/rupam.jpg" alt="Rupam">
-        <h4>Rupam</h4>
-        <p>Technical Lead & Automation Expert</p>
-      </div>
-      <div class="team-member">
-        <img src="images/eshan.jpg" alt="Eshan">
-        <h4>Eshan</h4>
-        <p>Digital Marketing Strategist</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- PRODUCTS SECTION -->
-  <section class="products fade-in" id="products">
-    <div class="container">
-      <h2 class="section-title">OUR PRODUCTS</h2>
-      <div class="products-grid">
-        <!-- Product 1 (Video) -->
-        <div class="product">
-          <video  autoplay muted  loop playsinline>
-            <source src="images/product-1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4>Dnv Foods Ad-Shoot</h4>
-        </div>        
-        <!-- Product 2 (Image) -->
-        <div class="product">
-          <img src="images/product-2.jpg" alt="Product 2" />
-          <h4>Cognizant Banner</h4>
-        </div>
-        <!-- Product 3 (Video) -->
-        <div class="product">
-          <video autoplay muted  loop playsinline>
-            <source src="images/product-3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4>Butterfly Beauty and Soaps</h4>
-        </div>
-        <!-- Product 4 (Image) -->
-        <div class="product">
-          <img src="images/product-4.jpg" alt="Product 4" />
-          <h4>Avama Jwellery Flyer Design</h4>
-        </div>
-        <!-- Product 5 (Image) -->
-        <div class="product">
-          <img src="images/product-5.jpg" alt="Product 5" />
-          <h4>Exiciting Tales Travel Offer AD Design</h4>
-        </div>
-        <!-- Product 6 (Image) -->
-        <div class="product">
-          <img src="images/product-6.jpg" alt="Product 6" />
-          <h4>We Foundations Works1</h4>
-        </div>
-        <!-- Product 7 (Image) -->
-        <div class="product">
-          <img src="images/product-7.jpg" alt="Product 7" />
-          <h4>We Foundations Works2</h4>
-        </div>
-        <!-- Product 8 (Image) -->
-        <div class="product">
-          <img src="images/product-8.jpg" alt="Product 8" />
-          <h4>We Foundations Works3</h4>
+    <!-- WORKFLOW SECTION -->
+    <section class="workflow fade-in" id="workflow">
+      <div class="container">
+        <h2 class="section-title">OUR WORKFLOW</h2>
+        <div class="workflow-steps">
+          <div class="step">
+            <h3>01 CONCEPT</h3>
+            <p>We begin by brainstorming and understanding your vision.</p>
+          </div>
+          <div class="step">
+            <h3>02 BUDGET</h3>
+            <p>We define the scope and resources needed for the project.</p>
+          </div>
+          <div class="step">
+            <h3>03 DEVELOPMENT</h3>
+            <p>We create, iterate, and refine until we meet your goals.</p>
+          </div>
+          <div class="step">
+            <h3>04 RESULTS</h3>
+            <p>We deliver measurable outcomes that drive success.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
- <!-- FOOTER / CONTACT SECTION -->
-<footer class="footer" id="contact">
-  <div class="container footer-container">
-    <div class="footer-content fade-in">
-      <h3>CONNECT WITH US</h3>
-      <p>Ready to start your next project with Inrush Digibros?</p>
-      <br>
-      <a href="#hero" class="btn">Get Started</a>
-    </div>
-    
-    <div class="footer-info fade-in">
-      <h4>Inrush Digibros</h4>
-      <p>Digital Creative Agency</p>
-      <p>17 Dasnagar,Jodhpur Park(west),Kolkata,West Bengal 700045</p>
-      <p><strong>Services:</strong> UI/UX, Branding, Marketing, Web Dev, All Type of Digital Solutions</p>
+    <!-- SERVICES SECTION (Integrated from services.html) -->
+    <section class="services fade-in" id="services">
+      <div class="container">
+        <h2 class="section-title">Digital Marketing Packages for Kolkata Startups</h2>
+        <!-- Package Tabs -->
+        <div class="package-tabs">
+          <button class="tab-button active" onclick="filterServices('all', event)">All Packages</button>
+          <button class="tab-button" onclick="filterServices('individual', event)">Individual Services</button>
+          <button class="tab-button" onclick="filterServices('packages', event)">Packages</button>
+        </div>
+        <!-- Packages Container -->
+        <div class="packages-container" id="packages-section">
+          <!-- Package Card 1 -->
+          <div class="package-card" data-type="packages">
+            <div class="package-header essential-header">
+              <h3 class="package-name">Startup Essentials</h3>
+              <div class="package-price">₹25,000<span>/month</span></div>
+              <p class="package-description">Establish your digital presence with essential services</p>
+            </div>
+            <div class="package-features">
+              <ul class="feature-list">
+                <li class="feature-item">Basic SEO (local focus)</li>
+                <li class="feature-item">Social Media Management (2 platforms)</li>
+                <li class="feature-item">Content Calendar</li>
+                <li class="feature-item">Monthly Social Media Plan</li>
+                <li class="feature-item">Google Business Profile Setup &amp; Management</li>
+                <li class="feature-item">4 Static Creatives per month</li>
+                <li class="feature-item">2 Reels/Short Videos per month</li>
+                <li class="feature-item">Monthly Performance Report</li>
+              </ul>
+            </div>
+            <button class="cta-button">Get Started</button>
+          </div>
+          <!-- Package Card 2 -->
+          <div class="package-card" data-type="packages">
+            <div class="package-header growth-header">
+              <h3 class="package-name">Growth Accelerator</h3>
+              <div class="package-price">₹45,000<span>/month</span></div>
+              <p class="package-description">Expand your reach with comprehensive digital marketing</p>
+            </div>
+            <div class="package-features">
+              <ul class="feature-list">
+                <li class="feature-item">Comprehensive SEO (local + regional)</li>
+                <li class="feature-item">Social Media Management (3 platforms)</li>
+                <li class="feature-item">Content Marketing (4 blog posts/month)</li>
+                <li class="feature-item">Advanced Content Calendar &amp; Strategy</li>
+                <li class="feature-item">Google Business Profile Management</li>
+                <li class="feature-item">8 Static Creatives per month</li>
+                <li class="feature-item">4 Reels/Short Videos per month</li>
+                <li class="feature-item">Basic Influencer Marketing</li>
+                <li class="feature-item">PR Services (local outreach)</li>
+                <li class="feature-item">Bi-weekly Performance Reports</li>
+              </ul>
+            </div>
+            <button class="cta-button">Get Started</button>
+          </div>
+          <!-- Package Card 3 -->
+          <div class="package-card" data-type="packages">
+            <div class="package-header premium-header">
+              <h3 class="package-name">Premium Dominance</h3>
+              <div class="package-price">₹75,000<span>/month</span></div>
+              <p class="package-description">End-to-end digital marketing solutions for national reach</p>
+            </div>
+            <div class="package-features">
+              <ul class="feature-list">
+                <li class="feature-item">Enterprise SEO (national focus)</li>
+                <li class="feature-item">Premium Social Media (4+ platforms)</li>
+                <li class="feature-item">Advanced Content (8 blog posts/month)</li>
+                <li class="feature-item">Comprehensive Content Strategy</li>
+                <li class="feature-item">Google Business Profile Advanced</li>
+                <li class="feature-item">12 Static Creatives per month</li>
+                <li class="feature-item">8 Reels/Short Videos per month</li>
+                <li class="feature-item">Mid-tier Influencer Marketing</li>
+                <li class="feature-item">PR Services (national outreach)</li>
+                <li class="feature-item">Weekly Performance Reports</li>
+              </ul>
+            </div>
+            <button class="cta-button">Get Started</button>
+          </div>
+        </div>
 
-      <!-- Social Media Icons -->
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=61574484014125" target="_blank" class="social-btn facebook">
-          <img src="images/facebook-icon.png" alt="Facebook">
-        </a>
-        <a href="https://wa.me/7003292773" target="_blank" class="social-btn whatsapp">
-          <img src="images/whatsapp-icon.png" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com/inrushdigibros/?fbclid=IwZXh0bgNhZW0CMTEAAR39G_WHj9z5Byq91SJKsxIZcYRQlbIOqxAu99NYUodQI2i6TMqXfcuqYhQ_aem_14uaKwsQaMdIiidmCXgitw" target="_blank" class="social-btn instagram">
-          <img src="images/instagram-icon.png" alt="Instagram">
-        </a>
+        <!-- Individual Services Section -->
+        <h2 class="section-title">Individual Services</h2>
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">🔍</div>
+            <h3 class="service-title">Search Engine Optimization</h3>
+            <p class="service-description">Boost your website's visibility in search results</p>
+            <div class="price-range">₹12,000 - ₹35,000/month</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Basic SEO:</strong> ₹12,000-₹18,000/month</p>
+                    <p><strong>Standard SEO:</strong> ₹18,000-₹25,000/month</p>
+                    <p><strong>Comprehensive SEO:</strong> ₹25,000-₹35,000/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Social Media Management</h3>
+            <p class="service-description">Engage with your audience across social platforms</p>
+            <div class="price-range">₹8,000 - ₹35,000/month</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Basic (1-2 platforms):</strong> ₹8,000-₹12,000/month</p>
+                    <p><strong>Standard (2-3 platforms):</strong> ₹12,000-₹18,000/month</p>
+                    <p><strong>Premium (3-4 platforms):</strong> ₹18,000-₹25,000/month</p>
+                    <p><strong>Enterprise (4+ platforms):</strong> ₹25,000-₹35,000/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">Create professional websites for your business</p>
+            <div class="price-range">₹8,000 - ₹80,000+</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Basic Website:</strong> ₹8,000-₹15,000</p>
+                    <p><strong>Dynamic Website:</strong> ₹15,000-₹35,000</p>
+                    <p><strong>E-commerce Website:</strong> ₹25,000-₹60,000</p>
+                    <p><strong>Custom Web Application:</strong> Starting from ₹80,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">✏️</div>
+            <h3 class="service-title">Content Marketing</h3>
+            <p class="service-description">Engage your audience with valuable content</p>
+            <div class="price-range">₹1,500 - ₹15,000/month</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Blog Posts:</strong> ₹1,500-₹3,000 per article</p>
+                    <p><strong>Content Calendar:</strong> ₹5,000-₹8,000 per month</p>
+                    <p><strong>Monthly Content Plan:</strong> ₹8,000-₹12,000</p>
+                    <p><strong>Premium Content Creation:</strong> ₹10,000-₹15,000/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 5 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">🗺️</div>
+            <h3 class="service-title">Google Business Profile</h3>
+            <p class="service-description">Optimize your local presence on Google</p>
+            <div class="price-range">₹3,000 - ₹6,000/month</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Basic Setup:</strong> ₹3,000-₹5,000 (one-time)</p>
+                    <p><strong>Monthly Management:</strong> ₹3,000-₹6,000/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 6 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">👥</div>
+            <h3 class="service-title">Influencer Marketing</h3>
+            <p class="service-description">Leverage influencers to reach your target audience</p>
+            <div class="price-range">₹5,000 - ₹50,000</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Micro-Influencer Campaign:</strong> ₹5,000-₹15,000</p>
+                    <p><strong>Mid-Tier Influencer Campaign:</strong> ₹15,000-₹30,000</p>
+                    <p><strong>Custom Influencer Strategy:</strong> ₹30,000-₹50,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 7 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">🎨</div>
+            <h3 class="service-title">Creative Services</h3>
+            <p class="service-description">Eye-catching designs for your brand</p>
+            <div class="price-range">₹800 - ₹8,000</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Logo Design:</strong> ₹2,000-₹6,000</p>
+                    <p><strong>Static Creative Design:</strong> ₹1,500-₹3,000 per design</p>
+                    <p><strong>Reels/Short Video:</strong> ₹3,000-₹8,000 per video</p>
+                    <p><strong>Banner Design:</strong> ₹800-₹2,000 per banner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 8 -->
+          <div class="service-card" data-type="individual">
+            <div class="service-icon">📰</div>
+            <h3 class="service-title">PR Services</h3>
+            <p class="service-description">Build your brand's reputation and visibility</p>
+            <div class="price-range">₹5,000 - ₹20,000/month</div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span>View Details</span>
+                  <span>+</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Basic PR:</strong> ₹8,000-₹15,000/month</p>
+                    <p><strong>Press Release Creation &amp; Distribution:</strong> ₹5,000-₹10,000 per release</p>
+                    <p><strong>Media Outreach:</strong> ₹10,000-₹20,000/month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customization Options Section -->
+        <h2 class="section-title">Customization Options</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🛒</div>
+            <h3 class="service-title">E-commerce Implementation</h3>
+            <p class="service-description">Add e-commerce functionality to your website</p>
+            <div class="price-range">₹15,000 - ₹25,000</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3 class="service-title">PPC Campaign Management</h3>
+            <p class="service-description">Manage your pay-per-click advertising campaigns</p>
+            <div class="price-range">₹10,000/month + ad spend</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📧</div>
+            <h3 class="service-title">Email Marketing</h3>
+            <p class="service-description">Connect with your audience through email</p>
+            <div class="price-range">Starting at ₹8,000/month</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3 class="service-title">Marketing Automation</h3>
+            <p class="service-description">Automate your marketing processes</p>
+            <div class="price-range">Starting at ₹12,000/month</div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-subscribe fade-in">
-      <h4>Subscribe</h4>
-      <form id="subscribe-form">
-        <input type="email" id="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <p id="message"></p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Inrush Digibros. All Rights Reserved.</p>
-  </div>
-</footer>
+    <!-- ABOUT US SECTION -->
+    <section class="about-us fade-in" id="about">
+      <div class="container">
+        <h2 class="section-title">MEET THE DIGIBROS</h2>
+        <div class="about-content">
+          <p>
+            We are a team of passionate digital experts dedicated to helping artists, entrepreneurs, and businesses 
+            thrive in the online world. Our expertise in marketing, design, and technology fuels innovative solutions 
+            that drive success. Let’s build something incredible together!
+          </p>
+        </div>
+        <div class="team-grid fade-in">
+          <div class="team-member">
+            <img src="images/indrayudh.jpg" alt="Indrayudh">
+            <h4>Indrayudh</h4>
+            <p>Content Head &amp; Creative Director</p>
+          </div>
+          <div class="team-member">
+            <img src="images/rupam.jpg" alt="Rupam">
+            <h4>Rupam</h4>
+            <p>Technical Lead &amp; Automation Expert</p>
+          </div>
+          <div class="team-member">
+            <img src="images/eshan.jpg" alt="Eshan">
+            <h4>Eshan</h4>
+            <p>Digital Marketing Strategist</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- JavaScript for Email Collection -->
-<script>
-  document.getElementById("subscribe-form").addEventListener("submit", async function(event) {
-    event.preventDefault();
-    
-    const email = document.getElementById("email").value;
-    const messageElement = document.getElementById("message");
+    <!-- PRODUCTS SECTION -->
+    <section class="products fade-in" id="products">
+      <div class="container">
+        <h2 class="section-title">OUR PRODUCTS</h2>
+        <div class="products-grid">
+          <!-- Product 1 (Video) -->
+          <div class="product">
+            <video autoplay muted loop playsinline>
+              <source src="images/product-1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h4>Dnv Foods Ad-Shoot</h4>
+          </div>
+          <!-- Product 2 (Image) -->
+          <div class="product">
+            <img src="images/product-2.jpg" alt="Product 2" />
+            <h4>Cognizant Banner</h4>
+          </div>
+          <!-- Product 3 (Video) -->
+          <div class="product">
+            <video autoplay muted loop playsinline>
+              <source src="images/product-3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h4>Butterfly Beauty and Soaps</h4>
+          </div>
+          <!-- Product 4 (Image) -->
+          <div class="product">
+            <img src="images/product-4.jpg" alt="Product 4" />
+            <h4>Avama Jwellery Flyer Design</h4>
+          </div>
+          <!-- Product 5 (Image) -->
+          <div class="product">
+            <img src="images/product-5.jpg" alt="Product 5" />
+            <h4>Exiciting Tales Travel Offer AD Design</h4>
+          </div>
+          <!-- Product 6 (Image) -->
+          <div class="product">
+            <img src="images/product-6.jpg" alt="Product 6" />
+            <h4>We Foundations Works1</h4>
+          </div>
+          <!-- Product 7 (Image) -->
+          <div class="product">
+            <img src="images/product-7.jpg" alt="Product 7" />
+            <h4>We Foundations Works2</h4>
+          </div>
+          <!-- Product 8 (Image) -->
+          <div class="product">
+            <img src="images/product-8.jpg" alt="Product 8" />
+            <h4>We Foundations Works3</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    try {
-      const response = await fetch("save_email.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email })
-      });
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer class="footer" id="contact">
+      <div class="container footer-container">
+        <div class="footer-content fade-in">
+          <h3>CONNECT WITH US</h3>
+          <p>Ready to start your next project with Inrush Digibros?</p>
+          <br>
+          <a href="#hero" class="btn">Get Started</a>
+        </div>
+        <div class="footer-info fade-in">
+          <h4>Inrush Digibros</h4>
+          <p>Digital Creative Agency</p>
+          <p>17 Dasnagar, Jodhpur Park (West), Kolkata, West Bengal 700045</p>
+          <p><strong>Services:</strong> UI/UX, Branding, Marketing, Web Dev, All Type of Digital Solutions</p>
+          <!-- Social Media Icons -->
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61574484014125" target="_blank" class="social-btn facebook">
+              <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/7003292773" target="_blank" class="social-btn whatsapp">
+              <img src="images/whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/inrushdigibros/" target="_blank" class="social-btn instagram">
+              <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div class="footer-subscribe fade-in">
+          <h4>Subscribe</h4>
+          <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p id="message"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Inrush Digibros. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-      const data = await response.json();
-      if (data.success) {
-        messageElement.innerText = "Thank you for subscribing!";
-        messageElement.style.color = "green";
-      } else {
-        messageElement.innerText = "Error subscribing. Try again.";
-        messageElement.style.color = "red";
-      }
-    } catch (error) {
-      messageElement.innerText = "Server error. Try again later.";
-      messageElement.style.color = "red";
-    }
-  });
-</script>
-
-
-  <!-- BACK TO TOP BUTTON -->
-  <button id="backToTop" height="10px" width="10px"  title="Back to top"> &#8679;</button>
-
-  <!-- SCRIPTS -->
-  <script>
-    // Smooth Scrolling for nav links
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetID = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetID);
-        targetSection.scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Typewriter Effect in Hero Section
-    const typewriterElement = document.getElementById("typewriter");
-    const textArray = [
-      "Marketing for Artists", 
-      "Design for Creators", 
-      "Solutions for Visionaries"
-    ];
-    let textArrayIndex = 0, charIndex = 0;
-    const typingDelay = 100, erasingDelay = 50, newTextDelay = 2000;
-    
-    function type() {
-      if (charIndex < textArray[textArrayIndex].length) {
-        typewriterElement.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-      } else {
-        setTimeout(erase, newTextDelay);
-      }
-    }
-    
-    function erase() {
-      if (charIndex > 0) {
-        typewriterElement.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-      } else {
-        textArrayIndex = (textArrayIndex + 1) % textArray.length;
-        setTimeout(type, typingDelay + 500);
-      }
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-      if(textArray.length) setTimeout(type, newTextDelay);
-    });
-
-    // Fade-in on scroll using Intersection Observer
-    const faders = document.querySelectorAll(".fade-in");
-    const observerOptions = {
-      threshold: 0.1
-    };
-    const fadeObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
+    <!-- JavaScript for Email Collection and other interactions -->
+    <script>
+      document.getElementById("subscribe-form").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const messageElement = document.getElementById("message");
+        try {
+          const response = await fetch("save_email.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: email })
+          });
+          const data = await response.json();
+          if (data.success) {
+            messageElement.innerText = "Thank you for subscribing!";
+            messageElement.style.color = "green";
+          } else {
+            messageElement.innerText = "Error subscribing. Try again.";
+            messageElement.style.color = "red";
+          }
+        } catch (error) {
+          messageElement.innerText = "Server error. Try again later.";
+          messageElement.style.color = "red";
         }
       });
-    }, observerOptions);
-    faders.forEach(fader => fadeObserver.observe(fader));
 
-    // Back to Top Button
-    const backToTopButton = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopButton.style.display = "block";
-      } else {
-        backToTopButton.style.display = "none";
+      // Smooth Scrolling for nav links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetID = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetID);
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Typewriter Effect in Hero Section
+      const typewriterElement = document.getElementById("typewriter");
+      const textArray = [
+        "Marketing for Artists", 
+        "Design for Creators", 
+        "Solutions for Visionaries"
+      ];
+      let textArrayIndex = 0, charIndex = 0;
+      const typingDelay = 100, erasingDelay = 50, newTextDelay = 2000;
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          typewriterElement.textContent += textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          setTimeout(erase, newTextDelay);
+        }
       }
-    });
-    backToTopButton.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Sticky header shadow effect
-    const header = document.getElementById("header");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        header.classList.add("header-shadow");
-      } else {
-        header.classList.remove("header-shadow");
+      function erase() {
+        if (charIndex > 0) {
+          typewriterElement.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          textArrayIndex = (textArrayIndex + 1) % textArray.length;
+          setTimeout(type, typingDelay + 500);
+        }
       }
-    });
-  </script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if(textArray.length) setTimeout(type, newTextDelay);
+      });
 
-</body>
+      // Fade-in on scroll using Intersection Observer
+      const faders = document.querySelectorAll(".fade-in");
+      const observerOptions = { threshold: 0.1 };
+      const fadeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      faders.forEach(fader => fadeObserver.observe(fader));
+
+      // Back to Top Button
+      const backToTopButton = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Sticky header shadow effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("header-shadow");
+        } else {
+          header.classList.remove("header-shadow");
+        }
+      });
+
+      // Accordion functionality for Services Section
+      function toggleAccordion(element) {
+        const accordionItem = element.parentElement;
+        const isActive = accordionItem.classList.contains('active');
+        document.querySelectorAll('.accordion-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        if (!isActive) {
+          accordionItem.classList.add('active');
+        }
+      }
+
+      // Filtering Packages and Services in the Services Section
+      function filterServices(type, event) {
+        // Update active button
+        document.querySelectorAll('.tab-button').forEach(button => {
+          button.classList.remove('active');
+        });
+        event.target.classList.add('active');
+        const packages = document.querySelectorAll('.package-card');
+        const services = document.querySelectorAll('.service-card');
+        if (type === 'all') {
+          packages.forEach(pkg => pkg.style.display = 'block');
+          services.forEach(svc => svc.style.display = 'block');
+        } else if (type === 'packages') {
+          packages.forEach(pkg => pkg.style.display = 'block');
+          services.forEach(svc => svc.style.display = 'none');
+        } else if (type === 'individual') {
+          packages.forEach(pkg => pkg.style.display = 'none');
+          services.forEach(svc => svc.style.display = 'block');
+        }
+      }
+    </script>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" title="Back to top">&#8679;</button>
+  </body>
 </html>

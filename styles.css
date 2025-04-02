@@ -181,7 +181,6 @@ body {
   color: #333;
 }
 
-
 /* Products Section */
 .products {
   padding: 4rem 0;
@@ -327,8 +326,8 @@ body {
 
 .social-btn {
   display: inline-block;
-  width: 32px; /* Adjust size */
-  height: 32px; /* Adjust size */
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -340,8 +339,216 @@ body {
   object-fit: cover;
 }
 
-/* Hover Effect */
 .social-btn:hover {
   transform: scale(1.1);
 }
 
+/* ------------------------- Additional CSS for Services Section ------------------------- */
+
+/* Services Section */
+#services {
+  background-color: #111;
+  padding: 4rem 0;
+}
+#services .section-title {
+  color: #f06529;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Package Tabs */
+#services .package-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#services .tab-button {
+  padding: 12px 24px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  color: #000;
+}
+#services .tab-button:hover {
+  transform: translateY(-3px);
+}
+#services .tab-button.active {
+  background-color: #f06529;
+  color: #fff;
+}
+
+/* Packages Container */
+#services .packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 4rem;
+}
+#services .package-card {
+  background-color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#services .package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+#services .package-header {
+  padding: 30px 20px;
+  text-align: center;
+}
+.essential-header {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #fff;
+}
+.growth-header {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+}
+.premium-header {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  color: #fff;
+}
+#services .package-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#services .package-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#services .package-price span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#services .package-description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+#services .package-features {
+  padding: 30px;
+}
+#services .feature-list {
+  list-style: none;
+}
+#services .feature-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+#services .feature-item:last-child {
+  border-bottom: none;
+}
+#services .feature-item::before {
+  content: '✓';
+  margin-right: 10px;
+  color: #2ecc71;
+  font-weight: bold;
+}
+#services .cta-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #111;
+  color: #f06529;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-top: 1px solid #444;
+}
+#services .cta-button:hover {
+  background-color: #f06529;
+  color: #fff;
+}
+
+/* Services Grid */
+#services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 4rem;
+}
+#services .service-card {
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+#services .service-card:hover {
+  transform: translateY(-5px);
+}
+#services .service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+#services .service-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #f06529;
+}
+#services .service-description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+#services .price-range {
+  font-weight: 600;
+  color: #f06529;
+  margin-top: 10px;
+}
+
+/* Accordion */
+#services .accordion {
+  margin-top: 20px;
+}
+#services .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #444;
+}
+#services .accordion-header {
+  background-color: #222;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f06529;
+}
+#services .accordion-header:hover {
+  background-color: #333;
+}
+#services .accordion-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+#services .accordion-content-inner {
+  padding: 20px;
+  color: #ccc;
+}
+#services .accordion-item.active .accordion-content {
+  max-height: 500px;
+}
